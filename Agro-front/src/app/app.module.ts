@@ -12,6 +12,9 @@ import { GestorListaComponent } from './Componentes/gestor/gestor-lista/componen
 import { VendedorDetalheComponent } from './Componentes/vendedor/vendedor-detalhe/components/vendedor-detalhe/vendedor-detalhe.component';
 import { VendedorFormComponent } from './Componentes/vendedor/vendedor-form/components/vendedor-form/vendedor-form.component';
 import { VendedorListaComponent } from './Componentes/vendedor/vendedor-lista/components/vendedor-lista/vendedor-lista.component';
+import { FooterComponent } from './Componentes/LandPage/footer/components/footer/footer.component';
+import { HeaderComponent } from './Componentes/LandPage/header/components/header/header.component';
+import { MainComponent } from './Componentes/LandPage/main/components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { VendedorListaComponent } from './Componentes/vendedor/vendedor-lista/co
     GestorListaComponent,
     VendedorDetalheComponent,
     VendedorFormComponent,
-    VendedorListaComponent
+    VendedorListaComponent,
+    FooterComponent,
+    HeaderComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
