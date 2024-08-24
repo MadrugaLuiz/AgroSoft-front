@@ -1,6 +1,6 @@
-div-principal{
-
-    background-image:src=('../../../../../../assets/Background.png');
+.principal{
+ background-image: url('../../../../../../assets/Background.png');
+    
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -8,16 +8,11 @@ div-principal{
     height: 100px; 
     padding: 20px;
     box-sizing: border-box;
+   
 
-    @media (max-width: 768px) {
-        header {
-            height: 70px; 
-            padding: 10px;
-        }
-}
 }
 
-div-text {
+.text {
 
     font-family: 'Montserrat', sans-serif;
     font-size: 2em; 

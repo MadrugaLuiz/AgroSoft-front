@@ -16,6 +16,7 @@ import { FooterComponent } from './Componentes/LandPage/footer/components/footer
 import { HeaderComponent } from './Componentes/LandPage/header/components/header/header.component';
 import { MainComponent } from './Componentes/LandPage/main/components/main/main.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { MainComponent } from './Componentes/LandPage/main/components/main/main.
     VendedorListaComponent,
     FooterComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+
   ],
   imports: [
     BrowserModule,
