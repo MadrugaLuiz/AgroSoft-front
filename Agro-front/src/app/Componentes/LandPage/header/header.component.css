@@ -1,26 +1,50 @@
 .principal {
-    background-image: url('../../../../assets/Background.png');
+    background-image: url('../../../../assets/fundo.png');
+    background-size: cover; /* Faz a imagem cobrir toda a área da header */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 150px; /* Defina a altura desejada da header */
+    color: white; /* Cor do texto */
+    display: flex; /* Configuração para alinhar os itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0 20px; /* Adiciona algum espaçamento lateral */
+}
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    box-sizing: border-box;
-  
+.imagem-empresa {
+    margin-right: 20px; /* Espaçamento entre a imagem e os elementos seguintes */
+}
 
+.imagem-empresa img {
+    width: 80px; /* Define o tamanho do círculo */
+    height: 80px; /* Define o tamanho do círculo */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+}
 
-    h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 3em;
-        color: #becabc;
-        justify-content: center;/* Centraliza horizontalmente */
-        align-items: center;/* Centraliza verticalmente */
-        height: 100vh;/* Exemplo de altura, ajustável conforme necessário */
-        margin-left: 40%;
-      
+.conteudo {
+    flex-grow: 1; /* Permite que o conteúdo centralize corretamente */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente o menu e o h1 */
+    text-align: center; /* Centraliza o texto */
+    margin-right: 200px;
+   
+}
 
-    }
+.conteudo .menu {
+    display: flex; /* Organiza os parágrafos em linha */
+    gap: 20px; /* Espaço entre os parágrafos */
+    margin-bottom: 10px; /* Espaço entre os parágrafos e o h1 */
+}
+.conteudo .menu p {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    margin-right: 100px; /* Espaço à direita de cada parágrafo */
+    /* margin-left: 15px;  // Se precisar mover à esquerda, use este */
+}
 
+.principal h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #becabc;
+    margin: 0; /* Remove a margem padrão do h1 */
 }
