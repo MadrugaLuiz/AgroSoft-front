@@ -4,9 +4,16 @@ import { MainComponent } from './Componentes/LandPage/main/main.component';
 import { HeaderComponent } from './Componentes/LandPage/header/header.component';
 
 const routes: Routes = [
-  {path:"landpage", component: MainComponent },
-  {path:"header", component:HeaderComponent}
-  
+  { path: "main", component: MainComponent },
+  { path: "header", component: HeaderComponent },
+
+
+
+
+
+
+  { path: "", redirectTo: "/landpage", pathMatch: "full" }
+
 ];
 
 @NgModule({

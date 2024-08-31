@@ -11,14 +11,25 @@
 }
 
 .imagem-empresa {
-    margin-right: 20px; /* Espaçamento entre a imagem e os elementos seguintes */
+    
+    width: 150px; /* Tamanho total do círculo */
+    height: 150px; /* Tamanho total do círculo */
+    border-radius: 50%; /* Faz o contêiner ficar redondo */
+    overflow: hidden; /* Garante que nada fora do círculo seja mostrado */
+    display: flex; /* Centraliza a imagem dentro do círculo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+   
+    
 }
 
 .imagem-empresa img {
-    width: 80px; /* Define o tamanho do círculo */
-    height: 80px; /* Define o tamanho do círculo */
-    border-radius: 50%; /* Torna a imagem circular */
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+   background-image: url("../../../../assets/Agro.jfif");
+    width: 120px; /* Define a largura desejada */
+    height: 120px; /* Define a altura desejada, igual à largura para garantir que seja quadrada */
+    border-radius: 500%; /* Faz a imagem ficar redonda */
+    object-fit: contain; /* Garante que a imagem preencha todo o círculo sem distorcer */
+    padding: 5%;
 }
 
 .conteudo {
