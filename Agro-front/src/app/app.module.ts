@@ -15,6 +15,7 @@ import { VendedorListaComponent } from './Componentes/ERP/vendedor/vendedor-list
 import { FooterComponent } from './Componentes/LandPage/footer/footer.component';
 import { HeaderComponent } from './Componentes/LandPage/header/header.component';
 import { MainComponent } from './Componentes/LandPage/main/main.component';
+import { CardProdutoComponent } from './Componentes/LandPage/card-produto/card-produto.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { MainComponent } from './Componentes/LandPage/main/main.component';
     FooterComponent,
     HeaderComponent,
     MainComponent,
+    CardProdutoComponent,
 
   ],
   imports: [

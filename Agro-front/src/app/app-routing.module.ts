@@ -6,13 +6,14 @@ import { HeaderComponent } from './Componentes/LandPage/header/header.component'
 const routes: Routes = [
   { path: "main", component: MainComponent },
   { path: "header", component: HeaderComponent },
+  
 
 
 
 
 
 
-  { path: "", redirectTo: "/landpage", pathMatch: "full" }
+  { path: "", redirectTo: "/main", pathMatch: "full" }
 
 ];
 
