@@ -16,6 +16,7 @@ import { FooterComponent } from './Componentes/LandPage/footer/footer.component'
 import { HeaderComponent } from './Componentes/LandPage/header/header.component';
 import { MainComponent } from './Componentes/LandPage/main/main.component';
 import { CardProdutoComponent } from './Componentes/LandPage/card-produto/card-produto.component';
+import { PartOneComponent } from './Componentes/LandPage/part-one/part-one.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { CardProdutoComponent } from './Componentes/LandPage/card-produto/card-p
     HeaderComponent,
     MainComponent,
     CardProdutoComponent,
+    PartOneComponent,
 
   ],
   imports: [

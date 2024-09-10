@@ -1,0 +1,13 @@
+.init{
+    border-color: black;
+    width: 60vw; /* 60% da largura da tela */
+    height: 60vh; /* 60% da altura da tela */
+    border-radius: 50px; /* Ajuste o valor do border-radius conforme necessário */
+    background-color: #f0f0f0; /* Escolha a cor de fundo ou use uma imagem */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    right: 0;
+    background-color: chartreuse;
+    
+
+}
