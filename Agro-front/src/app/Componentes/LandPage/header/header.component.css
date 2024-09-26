@@ -8,6 +8,7 @@
     display: flex; /* Configuração para alinhar os itens */
     align-items: center; /* Centraliza verticalmente */
     padding: 0 20px; /* Adiciona algum espaçamento lateral */
+    font-family: 'Times New Roman', Times, serif;
 }
 .imagem-empresa {
     

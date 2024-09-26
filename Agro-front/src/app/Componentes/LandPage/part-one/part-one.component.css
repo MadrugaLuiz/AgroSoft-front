@@ -9,6 +9,7 @@
     display: flex; /* Usa flexbox para alinhar os itens lado a lado */
     align-items: center; /* Alinha verticalmente ao centro */
     justify-content: space-between; /* Espaço entre os itens */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .titulo {
@@ -19,12 +20,15 @@
     padding: 20px; /* Espaço interno para o conteúdo */
     box-sizing: border-box; /* Inclui padding na largura */
     margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .titulo h3{
     font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .titulo p{
    font-size:18px;
+   font-family: 'Times New Roman', Times, serif;
 }
 
 .carousel {

@@ -1,0 +1,120 @@
+.carousel-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do título */
+    font-size: 8rem; /* Tamanho do título */
+    text-align: center;
+    z-index: 10; /* Garantir que esteja acima da imagem */
+    font-family: 'Times New Roman', Times, serif;
+}
+.carousel-subtitle {
+    position: absolute;
+    top: 80%; /* Posição mais abaixo que o título */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 10;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.carousel-text {
+    position: absolute;
+    top: 85%; /* Posição mais abaixo que o subtítulo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:2rem;
+    text-align: center;
+    z-index: 10;
+    max-width: 80%; /* Para limitar a largura do parágrafo */
+    font-family: 'Times New Roman', Times, serif;
+}
+.geral {
+    background-color: #ECECEC;
+    
+}
+.titulo {
+    text-align: center; /* Centraliza o texto dentro da div */
+    width: 45vw; /* Ajusta o tamanho da div */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    padding: 20px; /* Espaço interno para deixar o texto respirar */
+    border-radius: 25px; /* Borda arredondada */
+    box-sizing: border-box; /* Inclui padding na largura */
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Estilos para o título */
+.titulo h4 {
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: var(--titulo-maquina, #03490E); /* Variável CSS para a cor do título, com preto como padrão */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos para o parágrafo */
+.titulo p {
+    font-size: 25px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    padding-left: 20px; /* Espaço entre o texto e a borda */
+    border-left:3px solid #000; /* Linha estilo PIPE mais grossa */
+    border-right:3px solid #000;/* Linha estilo PIPE mais grossa */
+    margin-left: 20px; /* Espaço externo para dar separação da borda */
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Flexbox para organizar imagem e texto lado a lado */
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90vw; /* Largura total do conteúdo */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilo da imagem quadrada */
+.imagem-quadrada {
+    width: 30vw; /* Ocupa entre o início e o centro da tela */
+    height:30vw; /* Garante que a imagem seja quadrada */
+    object-fit: contain; /* Ajusta a imagem dentro do quadrado sem distorcer */
+    border-radius: 10px; /* Opcional: borda arredondada na imagem */
+}
+
+/* Estilos para o texto ao lado da imagem */
+.texto-lateral {
+    width:100vw; /* Ocupa o espaço entre o centro e o final da tela */
+    padding-left: 10px;
+}
+
+.texto-lateral h5 {
+    font-size: 30px;
+    color: #03490E;
+    margin-bottom: 30px;
+}
+
+.texto-lateral p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+    max-width: 35vw; /* Limita a largura para quebrar as linhas */
+    word-wrap: break-word;
+}
+
+.servico {
+    display: flex; /* Para alinhar os itens lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+    margin: 20px auto;
+    padding: 20px;
+    width: 90vw; /* Largura total da div */
+    background-color: #5caf4f; /* Cor de fundo */
+    font-family: 'Times New Roman', Times, serif;
+}
+
