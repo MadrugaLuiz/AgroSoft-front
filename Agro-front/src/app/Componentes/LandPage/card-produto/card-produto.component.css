@@ -32,8 +32,7 @@
 }
 
 .geral h5 {
-    font-size: 20px;
-    color: var(--dash-color, #319621);
+    font-size: 50px;
     display: flex;
     align-items: center; /* Alinha verticalmente o texto e o travessão */
     margin-right: 20px; /* Ajuste conforme necessário */
@@ -41,17 +40,23 @@
 .geral h5::before {
     content: ""; /* Elemento vazio para criar o travessão */
     width: 40px; /* Largura do travessão */
-    height:15px; /* Espessura do travessão */
+    height: 25px; /* Espessura do travessão */
     background-color: var(--dash-color, #319621); /* Cor ajustável via variável */
     margin-right: 10px; /* Espaçamento entre o travessão e o texto */
     display: inline-block;
+}
+.card-container {
+    display: flex; /* Usa flexbox para alinhar os cards lado a lado */
+    gap: 150px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards na tela */
+    padding: 50px;
 }
 .card {
     border: 1px solid #ddd; /* Borda do card */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra do card */
-    width: 250px; /* Largura do card (pode ser ajustada) */
-    height: 300px; /* Altura do card para torná-lo quadrado */
+    width: 400px; /* Largura do card (pode ser ajustada) */
+    height: 310px; /* Altura do card para torná-lo quadrado */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas */
     transition: transform 0.3s; /* Transição suave ao passar o mouse */
     display: flex; /* Usa flexbox para alinhar o conteúdo */
@@ -99,4 +104,57 @@
     --dash-color:var(--dash-color,#319621),
     --titulo-color:var(--titulo-color,#03490E);
 }
+.fertilizantes {
+    color: #319621; /* Cor para Fertilizantes */
+}
+
+
+.pesticida {
+    color: #0095FF; /* Cor para Pesticida */
+    
+}
+
+
+.aditivo-agricola {
+    color: #FF9900; /* Cor para Aditivo agrícola */
+}
+.geral h5.fertilizantes::before {
+    background-color: #319621; /* Cor do travessão para Fertilizantes */
+}
+
+/* Travessão para Pesticida */
+.geral h5.pesticida::before {
+    background-color: #0095FF; /* Cor do travessão para Pesticida */
+}
+
+/* Travessão para Aditivo agrícola */
+.geral h5.aditivo-agricola::before {
+    background-color: #FF9900; /* Cor do travessão para Aditivo agrícola */
+}
+.fertilizantes-btn {
+    background-color: #319621; /* Cor para Fertilizantes */
+    color: #fff; /* Cor do texto */
+}
+
+.pesticida-btn {
+    background-color: #0095FF; /* Cor para Pesticida */
+    color: #fff; /* Cor do texto */
+}
+
+.aditivo-agricola-btn {
+    background-color: #FF9900; /* Cor para Aditivo Agrícola */
+    color: #fff; /* Cor do texto */
+}
+.card1 {
+    border-bottom: 15px solid  #2da712 ;
+}
+
+.card2 {
+    border-bottom: 15px solid  #0095FF ;
+}
+
+.card3 {
+    border-bottom: 15px solid  #FF9900 ;
+}
+
 
