@@ -113,8 +113,129 @@
     justify-content: space-between; /* Espaça os itens */
     margin: 20px auto;
     padding: 20px;
-    width: 90vw; /* Largura total da div */
+    width: 100%; /* Largura total da div */
     background-color: #5caf4f; /* Cor de fundo */
     font-family: 'Times New Roman', Times, serif;
 }
+.form-orcamento {
+    background-color: #D4F1DB;
+    padding: 20px;
+    margin: 40px auto;
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-orcamento h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #03490E;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-row .form-group {
+    width: 48%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background-color: #03490E;
+    color: white;
+}
+
+.btn-cancelar {
+    background-color: #d9534f;
+    color: white;
+}
+.contato-mapa {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    background-color: #44e968; /* Cor de fundo para separar essa seção */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilo para a seção de contato */
+.contato {
+    width: 30%; /* Ocupa o espaço da tela até o centro */
+}
+
+.contato h6 {
+    font-size:90px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin: 60px;
+}
+
+.info-contato {
+    font-size: 40px;
+    line-height: 2;
+    margin: 60px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.contato-item i {
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: -10px;
+    color: #03490E; /* Cor dos ícones */
+}
+
+/* Estilo para a div do mapa */
+.mapa {
+    width: 55%; /* Ocupa o espaço entre o centro e o final da tela */
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mapa p {
+    font-size: 16px;
+    color: #666;
+}
+
+
 
