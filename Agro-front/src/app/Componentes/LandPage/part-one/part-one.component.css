@@ -1,11 +1,9 @@
 .init {
     border-color: black;
     width: 100vw; /* A largura total da tela */
-    height: 60vh; /* 60% da altura da tela */
     background-color: #C3D074; /* Cor de fundo */
     position: relative; 
     top: 50%;
-    transform: translateY(-50%);
     display: flex; /* Usa flexbox para alinhar os itens lado a lado */
     align-items: center; /* Alinha verticalmente ao centro */
     justify-content: space-between; /* Espaço entre os itens */

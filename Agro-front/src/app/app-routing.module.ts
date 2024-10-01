@@ -5,6 +5,8 @@ import { HeaderComponent } from './Componentes/LandPage/header/header.component'
 import { PartOneComponent } from './Componentes/LandPage/part-one/part-one.component';
 import { CardProdutoComponent } from './Componentes/LandPage/card-produto/card-produto.component';
 import { ServicoComponent } from './Componentes/LandPage/servico/servico.component';
+import { FooterComponent } from './Componentes/LandPage/footer/footer.component';
+import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: "PartOne", component: PartOneComponent },
   { path: "card-produto", component: CardProdutoComponent },
   { path: "servico", component: ServicoComponent },
+  { path: "footer", component: FooterComponent },
+  { path: "Tela", component: TelaComponent },
 
 
 
@@ -20,7 +24,7 @@ const routes: Routes = [
 
 
 
-  { path: "", redirectTo: "/main", pathMatch: "full" }
+  { path: "", redirectTo: "/Tela", pathMatch: "full" }
 
 ];
 

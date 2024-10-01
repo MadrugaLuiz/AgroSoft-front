@@ -18,6 +18,7 @@ import { MainComponent } from './Componentes/LandPage/main/main.component';
 import { CardProdutoComponent } from './Componentes/LandPage/card-produto/card-produto.component';
 import { PartOneComponent } from './Componentes/LandPage/part-one/part-one.component';
 import { ServicoComponent } from './Componentes/LandPage/servico/servico.component';
+import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ServicoComponent } from './Componentes/LandPage/servico/servico.compone
     CardProdutoComponent,
     PartOneComponent,
     ServicoComponent,
+    TelaComponent,
 
   ],
   imports: [

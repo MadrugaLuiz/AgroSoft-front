@@ -3,6 +3,7 @@
     background-size: cover; /* Faz a imagem cobrir toda a área da header */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
+   background-color: antiquewhite;
     height: 150px; /* Defina a altura desejada da header */
     color: white; /* Cor do texto */
     display: flex; /* Configuração para alinhar os itens */

@@ -30,6 +30,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .geral {
+    padding: 0 50px;
     background-color: #D4F1DB;
     text-align: right; /* Alinha o texto à direita */
     font-family: 'Times New Roman', Times, serif;

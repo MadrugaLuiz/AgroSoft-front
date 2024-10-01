@@ -1,0 +1,72 @@
+/* Estiliza a tela de login quadrada */
+.login-box {
+    width: 300px;  /* Tamanho quadrado */
+    height: 300px; /* Altura igual à largura para ser quadrado */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com opacidade */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estiliza a div maior */
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../../../assets/FundoERP.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ajusta o h2 para ficar no topo */
+.login-container h2 {
+    margin-bottom: 20px; /* Espaçamento entre o h2 e a login-box */
+    color: #3D3C3C; /* Cor do título */
+    text-align: center;
+    font-size: 60px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Adiciona negrito para destaque */
+    font-family: Oswald; /*Roboto,Raleway*/
+}
