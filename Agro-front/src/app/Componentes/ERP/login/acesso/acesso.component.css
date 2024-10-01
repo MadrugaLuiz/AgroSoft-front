@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.header {
+    background-color: #a8e6cf;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header h1 {
+    font-size: 50px;
+    color: #ff6f61;
+    margin: 10px;
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+.header .user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header .user-info span {
+    font-size: 16px;
+    color: #000;
+}
+.header .user-info .fa-cog {
+    margin-left: 10px;
+    color: #000;
+}
+.nav {
+    background-color: #d3d3d3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative; /* Necessário para o dropdown */
+}
+
+/* Botão Dashboard e Orçamento com hover customizado */
+.nav button:nth-child(1):hover {
+    background-color: #81c784; /* Cor para o botão Dashboard */
+    color: #fff; /* Alterar a cor do texto */
+}
+
+.nav button:nth-child(2):hover {
+    background-color: #81c784; /* Cor para o botão Orçamento */
+    color: #fff; /* Alterar a cor do texto */
+}
+
+/* Continua a estilização existente para hover padrão de outros botões */
+.nav button {
+    background-color: #a8e6cf;
+    border: 2px solid #ff8b94;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.nav button:hover {
+    background-color: #ff8b94;
+    border-color: #a8e6cf;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    width:100px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #81c784;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+.content .stats {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: #b3e5fc;
+    padding: 20px;
+    border-radius: 10px;
+}
+.content .stats .stat {
+    background-color: #ffccbc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+}
+.content .stats .stat:nth-child(2) {
+    background-color: #fff9c4;
+}
+.content .stats .stat:nth-child(3) {
+    background-color: #c8e6c9;
+}
+.content .stats .stat:nth-child(4) {
+    background-color: #e1bee7;
+}
+.content .stats .stat i {
+    font-size: 40px;
+    color: #ff6f61;
+}
+.content .stats .stat:nth-child(2) i {
+    color: #ffb74d;
+}
+.content .stats .stat:nth-child(3) i {
+    color: #66bb6a;
+}
+.content .stats .stat:nth-child(4) i {
+    color: #ba68c8;
+}
+.content .stats .stat h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #000;
+}
+.content .stats .stat p {
+    font-size: 16px;
+    color: #000;
+}
+.content .chart {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.content .chart h3 {
+    font-size: 18px;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+.content .chart .chart-content {
+    height: 200px;
+    background: linear-gradient(to top, #e0f7fa, #80deea);
+    border-radius: 10px;
+    position: relative;
+}
+.content .chart .chart-content .filter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #000;
+}
+.content .chart .chart-content .legend {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #000;
+}
+.content .chart .chart-content .legend span {
+    display: inline-block;
+    margin-right: 10px;
+}
+.content .chart .chart-content .legend .blue {
+    color: #1e88e5;
+}
+.content .chart .chart-content .legend .green {
+    color: #43a047;
+}

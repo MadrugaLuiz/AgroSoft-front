@@ -19,6 +19,10 @@ import { CardProdutoComponent } from './Componentes/LandPage/card-produto/card-p
 import { PartOneComponent } from './Componentes/LandPage/part-one/part-one.component';
 import { ServicoComponent } from './Componentes/LandPage/servico/servico.component';
 import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
+import { AcessoComponent } from './Componentes/ERP/login/acesso/acesso.component';
+import { TelaProdutoComponent } from './Componentes/ERP/produto/tela-produto/tela-produto.component';
+
+
 
 
 @NgModule({
@@ -40,6 +44,9 @@ import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
     PartOneComponent,
     ServicoComponent,
     TelaComponent,
+    AcessoComponent,
+    TelaProdutoComponent,
+
 
   ],
   imports: [
