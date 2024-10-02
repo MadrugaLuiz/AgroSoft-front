@@ -9,18 +9,20 @@ import { FooterComponent } from './Componentes/LandPage/footer/footer.component'
 import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
 import { AcessoComponent } from './Componentes/ERP/login/acesso/acesso.component';
 import { TelaProdutoComponent } from './Componentes/ERP/produto/tela-produto/tela-produto.component';
+import { TelaVendedorComponent } from './Componentes/ERP/vendedor/tela-vendedor/tela-vendedor.component';
 
 
 const routes: Routes = [
   { path: "main", component: MainComponent },
   { path: "header", component: HeaderComponent },
-  { path: "PartOne", component: PartOneComponent },
+  { path: "part-one", component: PartOneComponent },
   { path: "card-produto", component: CardProdutoComponent },
   { path: "servico", component: ServicoComponent },
   { path: "footer", component: FooterComponent },
-  { path: "Tela", component: TelaComponent },
+  { path: "login", component: TelaComponent },
   { path: "acesso", component: AcessoComponent },
   { path: "tela-produto", component: TelaProdutoComponent },
+  { path: "tela-vendedor", component: TelaVendedorComponent },
   
 
   
@@ -30,7 +32,7 @@ const routes: Routes = [
 
 
 
-  { path: "", redirectTo: "/tela-produto", pathMatch: "full" }
+  { path: "", redirectTo: "/tela-vendedor", pathMatch: "full" }
 
 ];
 

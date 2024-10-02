@@ -21,6 +21,8 @@ import { ServicoComponent } from './Componentes/LandPage/servico/servico.compone
 import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
 import { AcessoComponent } from './Componentes/ERP/login/acesso/acesso.component';
 import { TelaProdutoComponent } from './Componentes/ERP/produto/tela-produto/tela-produto.component';
+import { TelaServicosComponent } from './Componentes/servicos/tela-servicos/tela-servicos.component';
+import { TelaVendedorComponent } from './Componentes/ERP/vendedor/tela-vendedor/tela-vendedor.component';
 
 
 
@@ -46,6 +48,8 @@ import { TelaProdutoComponent } from './Componentes/ERP/produto/tela-produto/tel
     TelaComponent,
     AcessoComponent,
     TelaProdutoComponent,
+    TelaServicosComponent,
+    TelaVendedorComponent,
 
 
   ],
