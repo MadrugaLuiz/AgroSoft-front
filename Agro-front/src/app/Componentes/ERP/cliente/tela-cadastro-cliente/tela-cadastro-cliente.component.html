@@ -1,0 +1,24 @@
+<app-cabecalho></app-cabecalho>
+<div>
+    <section>
+        <div class="form-container">
+            <input placeholder="Nome" type="text" [(ngModel)]="nome"/>
+            <input placeholder="Telefone" type="text" [(ngModel)]="telefone"/>
+            <input placeholder="Email" type="text" [(ngModel)]="email"/>
+            <select [(ngModel)]="tipo">
+                <option value="">
+                    Tipo
+                </option>
+                <option value="Interno">
+                    Interno
+                </option>
+                <option value="Externo">
+                    Externo
+                </option>
+            </select>
+            <button class="submit-btn" (click)="salvar()">
+                Cadastrar
+            </button>
+        </div>
+    </section>
+</div>

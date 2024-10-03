@@ -1,4 +1,4 @@
-body {
+main {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
 }
 .header h1 {
     color: #ff8b94;
-    font-size: 36px;
+    font-size: 45px;
     margin: 0;
 }
 .header .user-info {
@@ -52,16 +52,54 @@ body {
     background-color: #ff8b94;
     border-color: #a8e6cf;
 }
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    width:100px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #81c784;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 .content {
     padding: 20px;
 }
 .filter {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content:flex-start;
+    margin-top: 0px;
 }
+
+
 .filter i {
     margin-right: 10px;
+   
 }
 .filter span {
     font-size: 18px;
@@ -76,7 +114,7 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    padding: 10px;
+    padding: 20px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }

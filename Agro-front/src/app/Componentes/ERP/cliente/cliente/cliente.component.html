@@ -1,0 +1,80 @@
+<app-cabecalho></app-cabecalho>
+<div>
+    <section>
+        <div class="content">
+            <div class="filter">
+                <i class="fas fa-filter">
+                </i>
+                <span>
+                    Filtrar (7 dias)
+                </span>
+            </div>
+            <div class="new-item">
+                <button routerLink="/tela-cadastro-cliente">
+                    <i class="fas fa-plus">Novo
+                    </i>
+                </button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Nome
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Telefone
+                            </th>
+                            <th>
+                                Tipo
+                            </th>
+                            <th>
+                                Ação
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cliente of clientes">
+                            <td>
+                                #{{ cliente.id }}
+                            </td>
+                            <td>
+                                {{ cliente.nome }}
+                            </td>
+                            <td>
+                                {{ cliente.email }}
+                            </td>
+                            <td>
+                                {{ cliente.telefone }}
+                            </td>
+                            <td>
+                                {{ cliente.tipo }}
+                            </td>
+                            <td class="actions">
+                                <button class="details">
+                                    Detalhes
+                                </button>
+                                <button class="edit">
+                                    <i class="fas fa-edit">
+                                    </i>
+                                </button>
+                                <button class="delete">
+                                    <i class="fas fa-trash">
+                                    </i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+</div>

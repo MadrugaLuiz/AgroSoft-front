@@ -1,0 +1,38 @@
+<div class="header">
+    <h1>
+        AgroSoft
+    </h1>
+    <div class="user-info">
+        <img alt="User Avatar" height="50"
+          src="https://storage.googleapis.com/a1aa/image/RevTIOFzc9x2bCniMIpWL4z8VkJn6UGM7QDgbOuny4C2raxJA.jpg"
+          width="50" />
+        <div class="username">
+          {{ userNome }}
+        </div>
+        <div class="settings">
+          <i class="fas fa-cog">
+          </i>
+        </div>
+      </div>
+</div>
+<div class="nav">
+    <button [routerLink]="['/tela-cliente']">
+        Clientes
+    </button>
+    <button routerLink="/acesso">
+        Dashboard
+    </button>
+    <button routerLink="/tela-orcamento">
+        Orçamento
+    </button>
+    <div class="dropdown">
+        <button>
+            Gestão
+        </button>
+        <ul class="dropdown-menu">
+            <li><a routerLink="/tela-produto">Produtos</a></li>
+            <li><a routerLink="/tela-erp-servico">Serviços</a></li>
+            <li><a routerLink="/tela-vendedor">Vendedores</a></li>
+        </ul>
+    </div>
+</div>

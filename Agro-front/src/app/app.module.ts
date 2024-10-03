@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClienteDetalheComponent } from './Componentes/ERP/cliente/cliente-detalhe/components/cliente-detalhe/cliente-detalhe.component';
-import { ClienteFormComponent } from './Componentes/ERP/cliente/cliente-form/components/cliente-form/cliente-form.component';
-import { ClienteListaComponent } from './Componentes/ERP/cliente/cliente-lista/components/cliente-lista/cliente-lista.component';
 import { GestorDetalheComponent } from './Componentes/ERP/gestor/gestor-detalhe/components/gestor-detalhe/gestor-detalhe.component';
 import { GestorFormComponent } from './Componentes/ERP//gestor/gestor-form/components/gestor-form/gestor-form.component';
 import { GestorListaComponent } from './Componentes/ERP/gestor/gestor-lista/components/gestor-lista/gestor-lista.component';
@@ -21,8 +18,15 @@ import { ServicoComponent } from './Componentes/LandPage/servico/servico.compone
 import { TelaComponent } from './Componentes/ERP/login/tela/tela.component';
 import { AcessoComponent } from './Componentes/ERP/login/acesso/acesso.component';
 import { TelaProdutoComponent } from './Componentes/ERP/produto/tela-produto/tela-produto.component';
-import { TelaServicosComponent } from './Componentes/servicos/tela-servicos/tela-servicos.component';
+import { TelaServicosComponent } from './Componentes/ERP/tela-servicos/erp-servicos/tela-servicos.component';
 import { TelaVendedorComponent } from './Componentes/ERP/vendedor/tela-vendedor/tela-vendedor.component';
+import { ClienteComponent } from './Componentes/ERP/cliente/cliente/cliente.component';
+import { TelaCadastroServicosComponent } from './Componentes/ERP/tela-servicos/tela-cadastro-servicos/tela-cadastro-servicos/tela-cadastro-servicos.component';
+import { TelaCadastroVendedorComponent } from './Componentes/ERP/vendedor/tela-cadastro-vendedor/tela-cadastro-vendedor.component';
+import { TelaCadastroClienteComponent } from './Componentes/ERP/cliente/tela-cadastro-cliente/tela-cadastro-cliente.component';
+import { TelaOrcamentoComponent } from './Componentes/ERP/orcamento/tela-orcamento/tela-orcamento.component';
+import { FormsModule } from '@angular/forms';
+import { CabecalhoComponent } from './Componentes/ERP/compartilhados/cabecalho/cabecalho.component';
 
 
 
@@ -30,9 +34,6 @@ import { TelaVendedorComponent } from './Componentes/ERP/vendedor/tela-vendedor/
 @NgModule({
   declarations: [
     AppComponent,
-    ClienteDetalheComponent,
-    ClienteFormComponent,
-    ClienteListaComponent,
     GestorDetalheComponent,
     GestorFormComponent,
     GestorListaComponent,
@@ -50,12 +51,19 @@ import { TelaVendedorComponent } from './Componentes/ERP/vendedor/tela-vendedor/
     TelaProdutoComponent,
     TelaServicosComponent,
     TelaVendedorComponent,
+    ClienteComponent,
+    TelaCadastroServicosComponent,
+    TelaCadastroVendedorComponent,
+    TelaCadastroClienteComponent,
+    TelaOrcamentoComponent,
+    CabecalhoComponent,
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

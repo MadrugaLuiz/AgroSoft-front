@@ -1,9 +1,10 @@
-body {
+main {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
+
 .header {
     background-color: #a8e6cf;
     padding: 20px;
@@ -12,32 +13,38 @@ body {
     align-items: center;
     position: relative;
 }
+
 .header h1 {
     color: #ff8b94;
-    font-size: 36px;
+    font-size: 45px;
     margin: 0;
 }
+
 .header .user-info {
     display: flex;
     align-items: center;
     position: absolute;
     right: 20px;
 }
+
 .header .user-info img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
+
 .header .user-info span {
     margin-left: 10px;
     font-size: 18px;
 }
+
 .nav {
     background-color: #d3d3d3;
     padding: 10px;
     display: flex;
     justify-content: center;
 }
+
 .nav button {
     background-color: #a8e6cf;
     border: 2px solid #ff8b94;
@@ -48,10 +55,12 @@ body {
     border-radius: 20px;
     transition: background-color 0.3s, border-color 0.3s;
 }
+
 .nav button:hover {
     background-color: #ff8b94;
     border-color: #a8e6cf;
 }
+
 .dropdown {
     position: relative;
 }
@@ -67,7 +76,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
     margin: 0;
-    width:100px;
+    width: 100px;
 }
 
 .dropdown-menu li {
@@ -87,65 +96,81 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 .content {
+    background-color: #a9a9a9;
     padding: 20px;
 }
-.filter {
+
+.content .filter {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.filter i {
+
+.content .filter i {
+    font-size: 24px;
     margin-right: 10px;
 }
-.filter span {
+
+.content .filter span {
     font-size: 18px;
+    color: #0000ff;
 }
-.table-container {
-    background-color: #d3d3d3;
+
+.content .table-container {
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
 }
-table {
+
+.content .table-container table {
     width: 100%;
     border-collapse: collapse;
 }
-th, td {
+
+.content .table-container table th,
+.content .table-container table td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-th {
+
+.content .table-container table th {
     background-color: #f2f2f2;
 }
-.actions {
+
+.content .table-container table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.content .table-container table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.content .table-container table .status i {
+    font-size: 18px;
+}
+
+.content .table-container table .status .fa-check-circle {
+    color: #00ff00;
+}
+
+.content .table-container table .status .fa-times-circle {
+    color: #ff0000;
+}
+
+.content .new-button {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }
-.actions button {
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+
+.content .new-button i {
+    font-size: 24px;
+    margin-right: 10px;
 }
-.actions .details {
-    background-color: #90ee90;
-}
-.actions .edit {
-    background-color: #add8e6;
-}
-.actions .delete {
-    background-color: #ffcccb;
-}
-.new-item {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-}
-.new-item button {
-    background-color: #d3d3d3;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
+
+.content .new-button span {
+    font-size: 18px;
 }

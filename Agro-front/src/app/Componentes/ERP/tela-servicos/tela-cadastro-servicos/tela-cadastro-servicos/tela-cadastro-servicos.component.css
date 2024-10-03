@@ -1,8 +1,9 @@
-main {
-    font-family: Arial, sans-serif;
+
+section {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
     padding: 0;
-    background-color: #f0f0f0;
 }
 .header {
     background-color: #a8e6cf;
@@ -87,65 +88,33 @@ main {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-.content {
-    padding: 20px;
-}
-.filter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.filter i {
-    margin-right: 10px;
-}
-.filter span {
-    font-size: 18px;
-}
-.table-container {
-    background-color: #d3d3d3;
+.form-container {
+    background-color: #7fbf7f;
+    width: 50%;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
 }
-table {
+.form-container input, .form-container select, .form-container textarea {
     width: 100%;
-    border-collapse: collapse;
-}
-th, td {
     padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-th {
-    background-color: #f2f2f2;
-}
-.actions {
-    display: flex;
-    justify-content: space-around;
-}
-.actions button {
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+    margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
-.actions .details {
-    background-color: #90ee90;
+.form-container textarea {
+    height: 100px;
 }
-.actions .edit {
-    background-color: #add8e6;
-}
-.actions .delete {
-    background-color: #ffcccb;
-}
-.new-item {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-}
-.new-item button {
-    background-color: #d3d3d3;
+.form-container .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4f4f4f;
+    color: #fff;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
-    border-radius: 50%;
+}
+.form-container .submit-btn:hover {
+    background-color: #3e3e3e;
 }
